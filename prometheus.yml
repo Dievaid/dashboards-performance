@@ -1,0 +1,10 @@
+global:
+  scrape_interval: 3s
+
+scrape_configs:
+  - job_name: 'java-app'
+    static_configs:
+      - targets: ['java-app:8080']
+  - job_name: 'rust-app'
+    static_configs:
+      - targets: ['rust-app:7070']
